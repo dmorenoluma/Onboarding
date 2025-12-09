@@ -1,0 +1,62 @@
+[
+  {
+    "nombre": "Diana",
+    "fecha_nacimiento": "1995-06-14",
+    "edad": "3",
+    "genero": "femenino",
+    "tipo_documento": "Cedula",
+    "numero_documento": "11",
+    "telefono": "22",
+    "correo": "DIANAMORENO@LUMACLOUD.CO",
+    "direccion": "JJ",
+    "ciudad": "JJ",
+    "pais": "JJ",
+    "estado_civil": "soltero",
+    "ocupacion": "JJ"
+  },
+  {
+    "nombre": "Diana",
+    "fecha_nacimiento": "1995-06-14",
+    "edad": "3",
+    "genero": "femenino",
+    "tipo_documento": "Cedula",
+    "numero_documento": "11",
+    "telefono": "22",
+    "correo": "DIANAMORENO@LUMACLOUD.CO",
+    "direccion": "JJ",
+    "ciudad": "JJ",
+    "pais": "JJ",
+    "estado_civil": "soltero",
+    "ocupacion": "JJ"
+  },
+  {
+    "nombre": "SS",
+    "fecha_nacimiento": "1995-06-14",
+    "edad": "38",
+    "genero": "masculino",
+    "tipo_documento": "otro",
+    "numero_documento": "SSD",
+    "telefono": "SSS",
+    "correo": "SSS@L.COM",
+    "direccion": "SSS",
+    "ciudad": "SSS",
+    "pais": "D",
+    "estado_civil": "soltero",
+    "ocupacion": "D"
+  },
+  {
+    "nombre": "S",
+    "fecha_nacimiento": "8877-05-14",
+    "edad": "2",
+    "genero": "femenino",
+    "tipo_documento": "Cedula",
+    "numero_documento": "2",
+    "telefono": "2",
+    "correo": "2@L.COM",
+    "direccion": "2",
+    "ciudad": "2",
+    "pais": "2",
+    "estado_civil": "soltero",
+    "ocupacion": "2"
+  }
+]
