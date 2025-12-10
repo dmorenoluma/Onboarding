@@ -73,5 +73,20 @@
     "pais": "3",
     "estado_civil": "soltero",
     "ocupacion": "e"
+  },
+  {
+    "nombre": "prueba",
+    "fecha_nacimiento": "0011-11-11",
+    "edad": "1",
+    "genero": "femenino",
+    "tipo_documento": "Cedula",
+    "numero_documento": "1",
+    "telefono": "1",
+    "correo": "1@23",
+    "direccion": "ss",
+    "ciudad": "ss",
+    "pais": "ss",
+    "estado_civil": "union libre",
+    "ocupacion": "ss"
   }
 ]
