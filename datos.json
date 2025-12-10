@@ -58,5 +58,20 @@
     "pais": "2",
     "estado_civil": "soltero",
     "ocupacion": "2"
+  },
+  {
+    "nombre": "d",
+    "fecha_nacimiento": "0333-03-31",
+    "edad": "3",
+    "genero": "femenino",
+    "tipo_documento": "Cedula",
+    "numero_documento": "3",
+    "telefono": "3",
+    "correo": "3@3",
+    "direccion": "3",
+    "ciudad": "3",
+    "pais": "3",
+    "estado_civil": "soltero",
+    "ocupacion": "e"
   }
 ]

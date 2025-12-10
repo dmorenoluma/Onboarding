@@ -5,7 +5,8 @@
   "main": "Server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,16 @@
     "body-parser": "^2.2.1",
     "cors": "^2.8.5",
     "express": "^5.2.1"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmorenoluma/Onboarding.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dmorenoluma/Onboarding/issues"
+  },
+  "homepage": "https://github.com/dmorenoluma/Onboarding#readme"
 }

@@ -1,124 +1,91 @@
-<!DOCTYPE html> <html>
+<!DOCTYPE html>
+<html>
 
- <header> 
+<head>
   <meta charset="UTF-8">
-<link rel="stylesheet" href="Assets/Css/Styles.css">
-	</header> 
+  <link rel="stylesheet" href="Assets/Css/Styles.css">
+    <title class="titulo">Luma Cloud</title>
+</head>
 
- <body> 
-  
-<title>Luma Cloud</title>
- 
-      
+<body>
 
- <div class="menu-contenedor">
- <img class="Imagen" src="Assets/Img/Icono2.0.png" alt="Logo de la empresa">
-	
-  <ul class="menu">
-    <li><a href="https://lumacloud.co/"target="_blank" rel="noopener noreferrer">Inicio</a></li>
-    <li><a href="https://lumacloud.co/servicios/"target="_blank" rel="noopener noreferrer">Servicios</a></li>
-    <li><a href="https://lumacloud.co/quienes-somos/"target="_blank" rel="noopener noreferrer">Nosotros</a></li>
-    <li><a href="https://lumacloud.co/contactenos/"target="_blank" rel="noopener noreferrer">Contacto</a></li>
-  </ul>
-</div>
-
-<h1 class="titulo"> Luma Cloud </h1>
-
- <p class="parrafo">En Luma Cloud, no solo ofrecemos infraestructura en la nube, garantizamos el crecimiento y la protección de tu empresa. Nos especializamos en soluciones avanzadas de ciberseguridad y ciber recuperación, asegurando que tu información y operaciones estén siempre protegidas.
-
-Nuestro equipo de expertos monitorea en tiempo real a través de nuestro SOC (Centro de Operaciones de Seguridad), detectando y respondiendo de inmediato ante cualquier amenaza digital.
-
-Confía en una nube diseñada para impulsar tu negocio con velocidad, seguridad y estabilidad, sin costos ocultos ni sorpresas.</p>
-
-    <div class="cont_form">
-        <h2>Formulario de Datos Básicos</h2>
-
-        <form id="formulario">
-
-
-            <h3>Información Personal</h3>
-
-            <label>Nombre completo:</label>
-            <input type="text" name="nombre" required>
-
-            <label>Fecha de nacimiento:</label>
-            <input type="date" name="fecha_nacimiento" required>
-
-            <label>Edad:</label>
-            <input type="number" name="edad" min="0" required>
-
-            <label>Género:</label>
-            <select name="genero">
-                <option value="femenino">Femenino</option>
-                <option value="masculino">Masculino</option>
-                <option value="otro">Otro</option>
-            </select>
-
-            <h3>Documento de Identidad</h3>
-
-            <label>Tipo de documento:</label>
-            <select name="tipo_documento">
-                <option value="Cedula">cedula</option>
-                <option value="pasaporte">Pasaporte</option>
-                <option value="otro">Otro</option>
-            </select>
-
-            <label>Número de documento:</label>
-            <input type="text" name="numero_documento" required>
-
-            <h3>Información de Contacto</h3>
-
-            <label>Teléfono:</label>
-            <input type="tel" name="telefono">
-
-            <label>Correo electrónico:</label>
-            <input type="email" name="correo">
-
-            <label>Dirección:</label>
-            <input type="text" name="direccion" placeholder="Calle y número">
-
-            <label>Ciudad:</label>
-            <input type="text" name="ciudad">
-
-            <label>País:</label>
-            <input type="text" name="pais">
-
-            <h3>Información Adicional</h3>
-
-            <label>Estado civil:</label>
-            <select name="estado_civil">
-                <option value="soltero">Soltero/a</option>
-                <option value="casado">Casado/a</option>
-                <option value="union libre">Unión libre</option>
-                <option value="otro">Otro</option>
-            </select>
-
-            <label>Ocupación:</label>
-            <input type="text" name="ocupacion">
-
-            <button type="submit">Enviar</button>
-        </form>
-
-        <script>
-document.getElementById("formulario").addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    const datos = Object.fromEntries(new FormData(e.target));
-
-    const respuesta = await fetch("http://localhost:5000/guardar", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(datos)
-    });
-
-    const resultado = await respuesta.json();
-    alert(resultado.mensaje);
-});
-</script>
-
+  <header class="header">
+  <div class="header-container">
+    
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="Assets/Img/Icono2.0.png" class="logo-img" alt="Logo de la empresa">
+      <span class="logo-text">Luma Cloud</span>
     </div>
- </body> 
+
+    <!-- MENÚ -->
+    <nav class="nav">
+      <a href="https://lumacloud.co/" target="_blank">Inicio</a>
+      <a href="https://lumacloud.co/servicios/" target="_blank">Servicios</a>
+      <a href="https://lumacloud.co/quienes-somos/" target="_blank">Nosotros</a>
+      <a href="https://lumacloud.co/contactenos/" target="_blank">Contacto</a>
+      <a href="#formulario-section" class="btn">Regístrate</a>
+    </nav>
+
+   
+  </div>
+</header>
  
- </html>
+  <h1 class="titulo"> Quienes somos </h1>
+  <p class="parrafo">En Luma Cloud, no solo ofrecemos infraestructura en la nube, garantizamos el crecimiento y la
+    protección de tu empresa. <br>
+    especializamos en soluciones avanzadas de ciberseguridad y ciber recuperación,
+    asegurando que tu información y operaciones estén siempre protegidas. <br> Nuestro equipo de expertos monitorea en tiempo
+    real a través de nuestro SOC (Centro de Operaciones de Seguridad), detectando y respondiendo de inmediato ante
+    cualquier amenaza digital. Confía en una nube diseñada para impulsar tu negocio con velocidad, seguridad y
+    estabilidad, sin costos ocultos ni sorpresas.</p>
+
+  <!-- <div class="card">
+    <div class="card-image"> <img
+        src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=400&fit=crop"
+        alt="Despedida de Año con LUMA"> <span class="badge">Hoy</span> </div>
+    <div class="card-body">
+      <h3 class="card-title clamp-2">Despedida de Año con LUMA</h3>
+      <p class="card-text clamp-2">Celebramos el cierre de un año exitoso con todo el equipo de LUMA.</p>
+    </div>
+  </div> -->
+
+  <div class="cont_form" id="formulario-section">
+    <h2>Registrate</h2>
+    <form id="formulario">
+      <h3>Información Personal</h3> <label>Nombre completo:</label> <input type="text" name="nombre" required>
+      <label>Fecha de nacimiento:</label> <input type="date" name="fecha_nacimiento" required> <label>Edad:</label>
+      <input type="number" name="edad" min="0" required> <label>Género:</label> <select name="genero">
+        <option value="femenino">Femenino</option>
+        <option value="masculino">Masculino</option>
+        <option value="otro">Otro</option>
+      </select>
+      <h3>Documento de Identidad</h3> <label>Tipo de documento:</label> <select name="tipo_documento">
+        <option value="Cedula">cedula</option>
+        <option value="pasaporte">Pasaporte</option>
+        <option value="otro">Otro</option>
+      </select> <label>Número de documento:</label> <input type="text" name="numero_documento" required>
+      <h3>Información de Contacto</h3> <label>Teléfono:</label> <input type="tel" name="telefono"> <label>Correo
+        electrónico:</label> <input type="email" name="correo"> <label>Dirección:</label> <input type="text"
+        name="direccion" placeholder="Calle y número"> <label>Ciudad:</label> <input type="text" name="ciudad">
+      <label>País:</label> <input type="text" name="pais">
+      <h3>Información Adicional</h3> <label>Estado civil:</label> <select name="estado_civil">
+        <option value="soltero">Soltero/a</option>
+        <option value="casado">Casado/a</option>
+        <option value="union libre">Unión libre</option>
+        <option value="otro">Otro</option>
+      </select> <label>Ocupación:</label> <input type="text" name="ocupacion"> <button type="submit">Enviar</button>
+    </form>
+    <script> 
+    document.getElementById("formulario").addEventListener("submit", async (e) => { e.preventDefault(); 
+    const datos = Object.fromEntries(new FormData(e.target)); 
+    const respuesta = await fetch("http://localhost:5000/guardar", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(datos) }); 
+    const resultado = await respuesta.json(); alert(resultado.mensaje); }); 
+    
+    </script>
+  </div>
+
+
+</body>
+
+</html
