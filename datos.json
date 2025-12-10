@@ -133,5 +133,20 @@
     "pais": "2",
     "estado_civil": "otro",
     "ocupacion": "2"
+  },
+  {
+    "nombre": "65y",
+    "fecha_nacimiento": "0777-07-22",
+    "edad": "5",
+    "genero": "femenino",
+    "tipo_documento": "Cedula",
+    "numero_documento": "7",
+    "telefono": "7",
+    "correo": "7@7",
+    "direccion": "q8",
+    "ciudad": "j",
+    "pais": "j",
+    "estado_civil": "soltero",
+    "ocupacion": "j"
   }
 ]
