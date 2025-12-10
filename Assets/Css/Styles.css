@@ -264,3 +264,36 @@ button:hover {
     display: block;
   }
 }
+
+/* Mostrar datos del formulario*/
+.cont_lista {
+  width: 100%;
+  max-width: 900px;      /* opcional, para limitar el ancho */
+  margin: 20px auto;     /* centrar */
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  overflow-x: auto;      /* IMPORTANTE para evitar que se salga */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cont_lista table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cont_lista th,
+.cont_lista td {
+  border: 1px solid #333;
+  padding: 8px;
+}
+
+#lista-usuarios {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+#lista-usuarios table {
+  width: 100%;
+  border-collapse: collapse;
+}

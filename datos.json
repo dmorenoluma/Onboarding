@@ -88,5 +88,50 @@
     "pais": "ss",
     "estado_civil": "union libre",
     "ocupacion": "ss"
+  },
+  {
+    "nombre": "sss",
+    "fecha_nacimiento": "55555-05-05",
+    "edad": "33",
+    "genero": "femenino",
+    "tipo_documento": "Cedula",
+    "numero_documento": "77",
+    "telefono": "777",
+    "correo": "7@7",
+    "direccion": "jjj",
+    "ciudad": "jjj",
+    "pais": "jjj",
+    "estado_civil": "soltero",
+    "ocupacion": "jj"
+  },
+  {
+    "nombre": "ss",
+    "fecha_nacimiento": "11212-01-11",
+    "edad": "123",
+    "genero": "femenino",
+    "tipo_documento": "Cedula",
+    "numero_documento": "ss",
+    "telefono": "11",
+    "correo": "s@1",
+    "direccion": "1",
+    "ciudad": "s",
+    "pais": "s",
+    "estado_civil": "soltero",
+    "ocupacion": "s"
+  },
+  {
+    "nombre": "s",
+    "fecha_nacimiento": "0222-02-22",
+    "edad": "22",
+    "genero": "femenino",
+    "tipo_documento": "Cedula",
+    "numero_documento": "2",
+    "telefono": "2",
+    "correo": "2@2",
+    "direccion": "2",
+    "ciudad": "2",
+    "pais": "2",
+    "estado_civil": "otro",
+    "ocupacion": "2"
   }
 ]
