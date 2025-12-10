@@ -1,10 +1,12 @@
 
-  .titulo {
-    text-align:center;
-	font-size:40px;
-	font-family: Arial, sans-serif; 
-	color: #1E90FF;
-  }
+ .titulo {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Saira Thin', sans-serif; 
+    font-weight: 100; /* Thin */
+    color: #1E90FF;
+}
+
 
   .parrafo {
 	text-align:justify;
