@@ -30,6 +30,7 @@
    
   </div>
 </header>
+<div>
  
   <h1 class="titulo"> Quienes somos </h1>
   <p class="parrafo">En Luma Cloud, no solo ofrecemos infraestructura en la nube, garantizamos el crecimiento y la
@@ -39,7 +40,7 @@
     real a través de nuestro SOC (Centro de Operaciones de Seguridad), detectando y respondiendo de inmediato ante
     cualquier amenaza digital. Confía en una nube diseñada para impulsar tu negocio con velocidad, seguridad y
     estabilidad, sin costos ocultos ni sorpresas.</p>
-
+</div>
   <!-- <div class="card">
     <div class="card-image"> <img
         src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=400&fit=crop"
@@ -84,6 +85,13 @@
    <div id="lista-usuarios" class="cont_lista">
 </div>
 
+ <div id="list-users" class="cont_lista">
+
+<h2>Datos del JSON</h2>
+
+<table border="1" cellpadding="5" id="tabla"></table>
+</div>
+
     <script> 
     document.getElementById("formulario").addEventListener("submit", async (e) => { e.preventDefault(); 
     const datos = Object.fromEntries(new FormData(e.target)); 
@@ -91,8 +99,62 @@
     const resultado = await respuesta.json(); alert(resultado.mensaje); }); 
     
     </script>
-    <script src="Assets/Js/form.js"></script> 
-  
+ 
+     <script src="Assets/Js/form.js"></script> 
+
+
+   
+<script>
+  // Leer JSON
+  fetch("datos.json")
+    .then(res => res.json())
+    .then(datos => {
+
+      // Crear encabezado de tabla
+      let tabla = `
+        <tr>
+          <th>Nombre</th>
+          <th>Fecha nacimiento</th>
+          <th>Edad</th>
+          <th>Género</th>
+          <th>Tipo doc.</th>
+          <th>Número doc.</th>
+          <th>Teléfono</th>
+          <th>Correo</th>
+          <th>Dirección</th>
+          <th>Ciudad</th>
+          <th>País</th>
+          <th>Estado civil</th>
+          <th>Ocupación</th>
+        </tr>
+      `;
+
+      // Recorrer TODOS los registros
+      datos.forEach(d => {
+        tabla += `
+          <tr>
+            <td>${d.nombre}</td>
+            <td>${d.fecha_nacimiento}</td>
+            <td>${d.edad}</td>
+            <td>${d.genero}</td>
+            <td>${d.tipo_documento}</td>
+            <td>${d.numero_documento}</td>
+            <td>${d.telefono}</td>
+            <td>${d.correo}</td>
+            <td>${d.direccion}</td>
+            <td>${d.ciudad}</td>
+            <td>${d.pais}</td>
+            <td>${d.estado_civil}</td>
+            <td>${d.ocupacion}</td>
+          </tr>
+        `;
+      });
+
+      document.getElementById("tabla").innerHTML = tabla;
+    });
+</script>
+
+
 
 
 </body>
