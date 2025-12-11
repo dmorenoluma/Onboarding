@@ -6,19 +6,19 @@ form.addEventListener("submit", (e) => {
 
   const datos = Object.fromEntries(new FormData(form));
 
-  // Leer todos los datos guardados
+
   let usuarios = JSON.parse(localStorage.getItem("datos")) || [];
   
-  // Agregar el dato nuevo
+
   usuarios.push(datos);
 
-  // Guardar de nuevo
+
   localStorage.setItem("datos", JSON.stringify(usuarios));
 
-  // Reset
+
   form.reset();
 
-  // Mostrar en pantalla
+
   mostrarUsuarios();
 });
 
